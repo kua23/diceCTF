@@ -5,7 +5,7 @@ Category-Cryptography
 We're opening a new casino! The only game is rock-paper-scissors though...
 
 ## Solution
-In the code given, it is mentioned that we need to win rock-paper-scissors against the computer 50 times in a row. For this, we are provided with 56 free trials. The entire challenge is based on LFSR(Linear Feedback Shift Register). To understand how it worked, I checked the video by [https://www.youtube.com/watch?v=Ks1pw1X22y4&t=463s](Computerphile) which gave an amazing explanation. 
+In the code given, it is mentioned that we need to win rock-paper-scissors against the computer 50 times in a row. For this, we are provided with 56 free trials. The entire challenge is based on LFSR(Linear Feedback Shift Register). To understand how it worked, I checked the video by [Computerphile](https://www.youtube.com/watch?v=Ks1pw1X22y4&t=463s) which gave an amazing explanation. 
 
 `
  def LFSR():
