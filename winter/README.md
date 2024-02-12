@@ -9,10 +9,13 @@ This question is based on the Winternitz One time Signature Scheme which is used
 The basic aim is we have to provide a message to the server which generates a signature for this and once we do this, we have to generate another message having the same signature. If the two signatures match, the flag is received.
 
 
-`         def keygen(cls):
-                sk = [os.urandom(32) for _ in range(32)]  
-                vk = [cls.hash(x, 256) for x in sk]  
-                return cls(sk, vk)  `
+`def keygen(cls):`
+
+	sk = [os.urandom(32) for _ in range(32)]
+
+	vk = [cls.hash(x, 256) for x in sk]
+
+	return cls(sk, vk)  
 
 
 Here, we have two variables, an sk corresponding to a secret key and a vk corresponding to verification key.
