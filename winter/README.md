@@ -1,3 +1,10 @@
+# winter
+
+Category: Cryptography
+
+A simple implementation of the Winternitz signature scheme.
+
+## Solution
 Basic aim is we have to provide a message to the server which generates a signature for this and once we do this, we have to generate another message having the same signature
 
 
