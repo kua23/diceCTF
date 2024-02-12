@@ -12,7 +12,7 @@ In the code given, it is mentioned that we need to win rock-paper-scissors again
 
 state = bytes_to_long(os.urandom(8))
 
-while 1:
+while 1: 
 
 	yield state & 0xf
 
@@ -20,8 +20,7 @@ while 1:
 
 		bit = (state ^ (state >> 1) ^ (state >> 3) ^ (state >> 4)) & 1
 
-		state = (state >> 1) | (bit << 63)
-`
+		state = (state >> 1) | (bit << 63) `
 An LFSR is mainly used to generate pseudo-random numbers.
 In the code, the variable state is an 8-byte long string generated using urandom and then converted to long, which is a long integer number. 
 Then a for loop is called which runs from 0 to 3, where the variable state is XORed with itself but by shifting the LSBs first once, then thrice and then four times. At the end, the result obtained from this bitwise operation is ANDed with 1 to get the last digit. The state is then updated by shifting the RSB by 1 and then setting the value of MSB to the value of bit.
